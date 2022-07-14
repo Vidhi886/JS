@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Slider Javascript</title>
+    </head>
+    <body id="co">
+        <button id="btnname">Enter number</button>
+        <h1>Number is: <span id="print"></span></h1>
+        <p>Hello how are you</p>
+        <button id="First" onclick="document.getElementById('details').innerHTML='this is text';">Click me!!</button>
+        <button id="Second" onclick="document.getElementById('details').innerHTML='';">Dont Click</button>
+        <p id="details"></p>
+        <button id="First" onclick="document.getElementById('details').style.fontSize='14px';">Small</button>
+        <button id="First" onclick="document.getElementById('details').style.fontSize='18px';">Medium</button>
+        <button id="First" onclick="document.getElementById('details').style.fontSize='20px';">Large</button>
+        <p id="details">javascript,often abbreviated js, is a programing language that is one of the core technologies of world wide web,all libraries.</p>
+        <section class="slider">
+            <div class="slider w30 img floatleft"><img src="nature.jpeg" onclick="document.getElementById('main-img').src='nature.jpeg'"/>
+                <img src="nature.jpeg" onclick="document.getElementById('main-img').src='nature.jpeg'"/>
+                <img src="https://th.bing.com/th/id/OIP.jR6c3kEv08-NjRdfM6iIngHaE7?w=279&h=186&c=7&r=0&o=5&dpr=1.25&pid=1.7"/>
+            </div>
+            <div class="slider w60 img floatleft">
+                <img id="main-img" class="slider" src="nature.jpeg">
+            </div>
+        </section>
+    </body>
+</html>

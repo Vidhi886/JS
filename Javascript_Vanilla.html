@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <title>Demo JavaScript</title>
+    <script type="text/javascript">
+        function javaInternalAlert() {
+            alert("Internal Alert.")
+        }
+        function javaInternalConfirm() {
+            if (confirm("Are you sure..?")) {
+                alert("Yesss")
+            }
+            else {
+                alert("Nooo")
+            }
+        }
+        function javaInternalPrompt() {
+            var fname = prompt("Enter First name here...");
+            var lname = prompt("Enter Last name here...");
+            alert(Fname + " " + Lname);
+        }
+        function bodyBGGreen() {
+            document.body.style.backgroundColor = "Green";
+        }
+        function divBGGreen() {
+            document.getElementById("D1").style.backgroundColor = "Gray";
+        }
+        function divBGDynamic() {
+            document.getElementById("D1").style.backgroundColor = prompt("Enter color name here...");
+        }
+        function bodyBGDynamic() {
+            document.body.style.backgroundColor = prompt("Enter color name here...");
+        }
+        function bodyBGCP1() {
+            document.body.style.backgroundColor = document.getElementById("CP1").value;
+        }
+        function divBGCP2() {
+            documnet.getElementById("D1").style.backgroundColor = document.getElementById("CP2").value;
+        }
+    </script>
+    <script src="Javascript_vanilla.js"></script>
+    <style type="text/css">
+        body {
+            background-color: blue;
+        }
+
+        div {
+            background-color: pink;
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="D1">
+        Hello Students
+    </div>
+    <hr />
+    <input type="button" value="Alert Inline" onclick="alert('Hello Guys')" />&nbsp;&nbsp;
+    <input type="button" value="Confirm Inline" onclick="Confirm('Are you sure..?')" />&nbsp;&nbsp;
+    <input type="button" value="Prompt Inline" onclick="prompt('Enter First name here...')" />&nbsp;&nbsp;
+    <hr />
+    <input type="button" value="Alert Internal" onclick="javaInternalAlert()" />&nbsp;&nbsp;
+    <input type="button" value="Confirm Internal" onclick="javaInternalConfirm()" />&nbsp;&nbsp;
+    <input type="button" value="Prompt Internal" onclick="javaInternalPrompt()" />&nbsp;&nbsp;
+    <hr />
+    <input type="button" value="Alert External" onclick="javaExternalAlert()" />&nbsp;&nbsp;
+    <input type="button" value="Confirm External" onclick="javaExternalConfirm()" />&nbsp;&nbsp;
+    <input type="button" value="Prompt External" onclick="javaExternalPrompt()" />&nbsp;&nbsp;
+    <hr />
+    <input type="button" value="Body Bg Green" onclick="bodyBGGreen()" />&nbsp;&nbsp;
+    <input type="button" value="Div Bg Gray" onclick="divBGGray()" />&nbsp;&nbsp;
+    <hr />
+    <input type="button" value="Body Bg Prompt" onclick="bodyBGDynamic()" />&nbsp;&nbsp;
+    <input type="button" value="Div Bg Prompt" onclick="divBGDynamic()" />&nbsp;&nbsp;
+    <hr />
+    <input type="color" id="CP1" onchange="bodyBGCP1()" />&nbsp;&nbsp;
+    <input type="color" id="CP2" onchange="divBGCP2()" />&nbsp;&nbsp;
+</body>
+
+</html>
